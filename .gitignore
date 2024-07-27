@@ -1,3 +1,5 @@
 /test.db
 /.venv/
 /.idea/
+
+**/app.log
