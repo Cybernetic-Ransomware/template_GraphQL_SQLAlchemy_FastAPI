@@ -1,0 +1,771 @@
+2024-07-26 15:56:20 - INFO - To jest informacja
+2024-07-26 15:56:20 - WARNING - To jest ostrze¿enie
+2024-07-26 15:56:20 - ERROR - To jest b³¹d
+2024-07-26 15:56:36 - INFO - To jest informacja
+2024-07-26 15:56:36 - WARNING - To jest ostrze¿enie
+2024-07-26 15:56:36 - ERROR - To jest b³¹d
+2024-07-26 15:57:13 - INFO - To jest informacja
+2024-07-26 15:57:13 - WARNING - To jest ostrze¿enie
+2024-07-26 15:57:13 - ERROR - To jest b³¹d
+2024-07-26 17:27:47 - INFO - Root endpoint accessed
+2024-07-26 17:28:55 - INFO - Reading all items
+2024-07-26 17:28:57 - INFO - Reading all items
+2024-07-26 17:29:06 - INFO - Reading item with ID: 5
+2024-07-26 17:35:57 - ERROR - Syntax Error: Unexpected single quote character ('), did you mean to use a double quote (")?
+
+GraphQL request:2:5
+1 | { 
+2 |     'hello'
+  |     ^
+3 | }
+2024-07-26 17:37:37 - ERROR - Syntax Error: Unexpected <EOF>.
+
+GraphQL request:5:8
+4 | #       }
+5 | #     }
+  |        ^
+6 |
+2024-07-26 17:55:45 - ERROR - 'generator' object has no attribute 'execute'
+
+GraphQL request:2:3
+1 | {
+2 |   items {
+  |   ^
+3 |     id
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 739, in _resolver
+    return _get_result_with_extensions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 726, in extension_resolver
+    return reduce(
+           ^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 721, in wrapped_get_result
+    return _get_result(
+           ^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 678, in _get_result
+    return field.get_result(
+           ^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 224, in get_result
+    return self.base_resolver(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\fields\resolver.py", line 203, in __call__
+    return self.wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\graphql_schema.py", line 24, in items
+    response = read_items(get_db())
+               ^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\connector.py", line 17, in read_items
+    result = db.execute(query)
+             ^^^^^^^^^^
+AttributeError: 'generator' object has no attribute 'execute'
+2024-07-26 17:55:51 - ERROR - 'generator' object has no attribute 'execute'
+
+GraphQL request:2:3
+1 | {
+2 |   items {
+  |   ^
+3 |     id
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 739, in _resolver
+    return _get_result_with_extensions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 726, in extension_resolver
+    return reduce(
+           ^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 721, in wrapped_get_result
+    return _get_result(
+           ^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 678, in _get_result
+    return field.get_result(
+           ^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 224, in get_result
+    return self.base_resolver(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\fields\resolver.py", line 203, in __call__
+    return self.wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\graphql_schema.py", line 24, in items
+    response = read_items(get_db())
+               ^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\connector.py", line 17, in read_items
+    result = db.execute(query)
+             ^^^^^^^^^^
+AttributeError: 'generator' object has no attribute 'execute'
+2024-07-26 17:57:01 - ERROR - 'generator' object has no attribute 'execute'
+
+GraphQL request:2:3
+1 | {
+2 |   items {
+  |   ^
+3 |     id
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 739, in _resolver
+    return _get_result_with_extensions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 726, in extension_resolver
+    return reduce(
+           ^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 721, in wrapped_get_result
+    return _get_result(
+           ^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 678, in _get_result
+    return field.get_result(
+           ^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 224, in get_result
+    return self.base_resolver(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\fields\resolver.py", line 203, in __call__
+    return self.wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\graphql_schema.py", line 24, in items
+    # response = read_items(get_db())
+               ^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\connector.py", line 17, in read_items
+    result = db.execute(query)
+             ^^^^^^^^^^
+AttributeError: 'generator' object has no attribute 'execute'
+2024-07-26 17:57:03 - ERROR - 'generator' object has no attribute 'execute'
+
+GraphQL request:2:3
+1 | {
+2 |   items {
+  |   ^
+3 |     id
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 739, in _resolver
+    return _get_result_with_extensions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 726, in extension_resolver
+    return reduce(
+           ^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 721, in wrapped_get_result
+    return _get_result(
+           ^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 678, in _get_result
+    return field.get_result(
+           ^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 224, in get_result
+    return self.base_resolver(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\fields\resolver.py", line 203, in __call__
+    return self.wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\graphql_schema.py", line 24, in items
+    # response = read_items(get_db())
+               ^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\connector.py", line 17, in read_items
+    result = db.execute(query)
+             ^^^^^^^^^^
+AttributeError: 'generator' object has no attribute 'execute'
+2024-07-26 17:57:08 - ERROR - 'generator' object has no attribute 'execute'
+
+GraphQL request:2:3
+1 | {
+2 |   items {
+  |   ^
+3 |     id
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 739, in _resolver
+    return _get_result_with_extensions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 726, in extension_resolver
+    return reduce(
+           ^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 721, in wrapped_get_result
+    return _get_result(
+           ^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 678, in _get_result
+    return field.get_result(
+           ^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 224, in get_result
+    return self.base_resolver(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\fields\resolver.py", line 203, in __call__
+    return self.wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\graphql_schema.py", line 24, in items
+    # response = read_items(get_db())
+               ^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\connector.py", line 17, in read_items
+    result = db.execute(query)
+             ^^^^^^^^^^
+AttributeError: 'generator' object has no attribute 'execute'
+2024-07-26 18:05:29 - ERROR - 'generator' object has no attribute 'execute'
+
+GraphQL request:2:3
+1 | {
+2 |   items {
+  |   ^
+3 |     id
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 739, in _resolver
+    return _get_result_with_extensions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 726, in extension_resolver
+    return reduce(
+           ^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 721, in wrapped_get_result
+    return _get_result(
+           ^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 678, in _get_result
+    return field.get_result(
+           ^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 224, in get_result
+    return self.base_resolver(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\fields\resolver.py", line 203, in __call__
+    return self.wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\graphql_schema.py", line 24, in items
+    # response = read_items(get_db())
+               ^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\connector.py", line 17, in read_items
+    result = db.execute(query)
+             ^^^^^^^^^^
+AttributeError: 'generator' object has no attribute 'execute'
+2024-07-26 18:13:37 - INFO - Root endpoint accessed
+2024-07-26 18:13:42 - INFO - Root endpoint accessed
+2024-07-27 13:45:55 - INFO - Root endpoint accessed
+2024-07-27 13:46:22 - INFO - Root endpoint accessed
+2024-07-27 14:14:19 - ERROR - name 'info' is not defined
+
+GraphQL request:2:3
+1 | query {
+2 |   items {
+  |   ^
+3 |     id
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 739, in _resolver
+    return _get_result_with_extensions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 726, in extension_resolver
+    return reduce(
+           ^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 721, in wrapped_get_result
+    return _get_result(
+           ^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 678, in _get_result
+    return field.get_result(
+           ^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 224, in get_result
+    return self.base_resolver(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\fields\resolver.py", line 203, in __call__
+    return self.wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\graphql\resolvers.py", line 25, in items
+    db: Session = info.context["db"]
+                  ^^^^
+NameError: name 'info' is not defined. Did you mean: 'Info'?
+2024-07-27 14:15:34 - ERROR - name 'info' is not defined
+
+GraphQL request:2:3
+1 | {
+2 |   items {
+  |   ^
+3 |     id
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 739, in _resolver
+    return _get_result_with_extensions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 726, in extension_resolver
+    return reduce(
+           ^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 721, in wrapped_get_result
+    return _get_result(
+           ^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 678, in _get_result
+    return field.get_result(
+           ^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 224, in get_result
+    return self.base_resolver(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\fields\resolver.py", line 203, in __call__
+    return self.wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\graphql\resolvers.py", line 25, in items
+    db: Session = info.context["db"]
+                  ^^^^
+NameError: name 'info' is not defined. Did you mean: 'Info'?
+2024-07-27 14:15:35 - ERROR - name 'info' is not defined
+
+GraphQL request:2:3
+1 | {
+2 |   items {
+  |   ^
+3 |     id
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 739, in _resolver
+    return _get_result_with_extensions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 726, in extension_resolver
+    return reduce(
+           ^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 721, in wrapped_get_result
+    return _get_result(
+           ^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 678, in _get_result
+    return field.get_result(
+           ^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 224, in get_result
+    return self.base_resolver(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\fields\resolver.py", line 203, in __call__
+    return self.wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\graphql\resolvers.py", line 25, in items
+    db: Session = info.context["db"]
+                  ^^^^
+NameError: name 'info' is not defined. Did you mean: 'Info'?
+2024-07-27 14:16:09 - ERROR - Field 'item' argument 'itemId' of type 'Int!' is required, but it was not provided.
+
+GraphQL request:2:3
+1 | query{
+2 |   item {
+  |   ^
+3 |     id
+2024-07-27 14:16:12 - ERROR - name 'info' is not defined
+
+GraphQL request:2:3
+1 | query{
+2 |   items {
+  |   ^
+3 |     id
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 739, in _resolver
+    return _get_result_with_extensions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 726, in extension_resolver
+    return reduce(
+           ^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 721, in wrapped_get_result
+    return _get_result(
+           ^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 678, in _get_result
+    return field.get_result(
+           ^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 224, in get_result
+    return self.base_resolver(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\fields\resolver.py", line 203, in __call__
+    return self.wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\graphql\resolvers.py", line 25, in items
+    db: Session = info.context["db"]
+                  ^^^^
+NameError: name 'info' is not defined. Did you mean: 'Info'?
+2024-07-27 14:17:25 - ERROR - 'property' object is not subscriptable
+
+GraphQL request:2:3
+1 | query{
+2 |   items {
+  |   ^
+3 |     id
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 739, in _resolver
+    return _get_result_with_extensions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 726, in extension_resolver
+    return reduce(
+           ^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 721, in wrapped_get_result
+    return _get_result(
+           ^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 678, in _get_result
+    return field.get_result(
+           ^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 224, in get_result
+    return self.base_resolver(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\fields\resolver.py", line 203, in __call__
+    return self.wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\graphql\resolvers.py", line 25, in items
+    db: Session = Info.context["db"]
+                  ~~~~~~~~~~~~^^^^^^
+TypeError: 'property' object is not subscriptable
+2024-07-27 14:17:26 - ERROR - 'property' object is not subscriptable
+
+GraphQL request:2:3
+1 | query{
+2 |   items {
+  |   ^
+3 |     id
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 739, in _resolver
+    return _get_result_with_extensions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 726, in extension_resolver
+    return reduce(
+           ^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 721, in wrapped_get_result
+    return _get_result(
+           ^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 678, in _get_result
+    return field.get_result(
+           ^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 224, in get_result
+    return self.base_resolver(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\fields\resolver.py", line 203, in __call__
+    return self.wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\graphql\resolvers.py", line 25, in items
+    db: Session = Info.context["db"]
+                  ~~~~~~~~~~~~^^^^^^
+TypeError: 'property' object is not subscriptable
+2024-07-27 14:17:49 - ERROR - 'list' object has no attribute 'id'
+
+GraphQL request:3:5
+2 |   items {
+3 |     id
+  |     ^
+4 |     name
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 660, in _get_basic_result
+    return field.get_result(_source, info=None, args=[], kwargs={})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 226, in get_result
+    return self.default_resolver(source, self.python_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'id'
+2024-07-27 14:17:50 - ERROR - 'list' object has no attribute 'id'
+
+GraphQL request:3:5
+2 |   items {
+3 |     id
+  |     ^
+4 |     name
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 660, in _get_basic_result
+    return field.get_result(_source, info=None, args=[], kwargs={})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 226, in get_result
+    return self.default_resolver(source, self.python_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'id'
+2024-07-27 14:17:50 - ERROR - 'list' object has no attribute 'id'
+
+GraphQL request:3:5
+2 |   items {
+3 |     id
+  |     ^
+4 |     name
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 660, in _get_basic_result
+    return field.get_result(_source, info=None, args=[], kwargs={})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 226, in get_result
+    return self.default_resolver(source, self.python_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'id'
+2024-07-27 14:19:03 - ERROR - 'function' object has no attribute 'execute'
+
+GraphQL request:2:3
+1 | query{
+2 |   items {
+  |   ^
+3 |     id
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 739, in _resolver
+    return _get_result_with_extensions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 726, in extension_resolver
+    return reduce(
+           ^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 721, in wrapped_get_result
+    return _get_result(
+           ^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 678, in _get_result
+    return field.get_result(
+           ^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 224, in get_result
+    return self.base_resolver(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\fields\resolver.py", line 203, in __call__
+    return self.wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\graphql\resolvers.py", line 26, in items
+    db_items = read_items(db)
+               ^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\connector.py", line 17, in read_items
+    result = db.execute(query)
+             ^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'execute'
+2024-07-27 14:31:30 - ERROR - 'Depends' object has no attribute 'execute'
+
+GraphQL request:2:3
+1 | query{
+2 |   items {
+  |   ^
+3 |     id
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 739, in _resolver
+    return _get_result_with_extensions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 726, in extension_resolver
+    return reduce(
+           ^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 721, in wrapped_get_result
+    return _get_result(
+           ^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 678, in _get_result
+    return field.get_result(
+           ^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 224, in get_result
+    return self.base_resolver(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\fields\resolver.py", line 203, in __call__
+    return self.wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\graphql\resolvers.py", line 27, in items
+    db_items = read_items(db)
+               ^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\connector.py", line 17, in read_items
+    result = db.execute(query)
+             ^^^^^^^^^^
+AttributeError: 'Depends' object has no attribute 'execute'
+2024-07-27 14:31:32 - ERROR - 'Depends' object has no attribute 'execute'
+
+GraphQL request:2:3
+1 | query{
+2 |   items {
+  |   ^
+3 |     id
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 739, in _resolver
+    return _get_result_with_extensions(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 726, in extension_resolver
+    return reduce(
+           ^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 721, in wrapped_get_result
+    return _get_result(
+           ^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 678, in _get_result
+    return field.get_result(
+           ^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 224, in get_result
+    return self.base_resolver(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\fields\resolver.py", line 203, in __call__
+    return self.wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\graphql\resolvers.py", line 27, in items
+    db_items = read_items(db)
+               ^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\app\connector.py", line 17, in read_items
+    result = db.execute(query)
+             ^^^^^^^^^^
+AttributeError: 'Depends' object has no attribute 'execute'
+2024-07-27 14:32:53 - ERROR - 'list' object has no attribute 'id'
+
+GraphQL request:3:5
+2 |   items {
+3 |     id
+  |     ^
+4 |     name
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 660, in _get_basic_result
+    return field.get_result(_source, info=None, args=[], kwargs={})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 226, in get_result
+    return self.default_resolver(source, self.python_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'id'
+2024-07-27 14:32:55 - ERROR - 'list' object has no attribute 'id'
+
+GraphQL request:3:5
+2 |   items {
+3 |     id
+  |     ^
+4 |     name
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 660, in _get_basic_result
+    return field.get_result(_source, info=None, args=[], kwargs={})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 226, in get_result
+    return self.default_resolver(source, self.python_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'id'
+2024-07-27 14:33:31 - ERROR - Syntax Error: Expected Name, found '}'.
+
+GraphQL request:3:3
+2 |   items {
+3 |   }
+  |   ^
+4 | }
+2024-07-27 14:33:38 - ERROR - 'list' object has no attribute 'name'
+
+GraphQL request:3:5
+2 |   items {
+3 |     name
+  |     ^
+4 |   }
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 660, in _get_basic_result
+    return field.get_result(_source, info=None, args=[], kwargs={})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 226, in get_result
+    return self.default_resolver(source, self.python_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2024-07-27 14:33:44 - ERROR - 'list' object has no attribute 'id'
+
+GraphQL request:3:5
+2 |   items {
+3 |     id
+  |     ^
+4 |     name
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 660, in _get_basic_result
+    return field.get_result(_source, info=None, args=[], kwargs={})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 226, in get_result
+    return self.default_resolver(source, self.python_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'id'
+2024-07-27 14:34:26 - ERROR - 'list' object has no attribute 'id'
+
+GraphQL request:3:5
+2 |   items {
+3 |     id
+  |     ^
+4 |     name
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 660, in _get_basic_result
+    return field.get_result(_source, info=None, args=[], kwargs={})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 226, in get_result
+    return self.default_resolver(source, self.python_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'id'
+2024-07-27 14:35:46 - ERROR - 'list' object has no attribute 'id'
+
+GraphQL request:3:5
+2 |   items {
+3 |     id
+  |     ^
+4 |     name
+Traceback (most recent call last):
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\graphql\execution\execute.py", line 521, in execute_field
+    result = resolve_fn(source, info, **args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\schema\schema_converter.py", line 660, in _get_basic_result
+    return field.get_result(_source, info=None, args=[], kwargs={})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\Dev_Mentoring\graphql\.venv\Lib\site-packages\strawberry\types\field.py", line 226, in get_result
+    return self.default_resolver(source, self.python_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'id'
+2024-07-27 14:39:29 - ERROR - Unknown argument 'id' on field 'Query.item'.
+
+GraphQL request:2:9
+1 | query{
+2 |   item (id: 2) {
+  |         ^
+3 |     id
+2024-07-27 14:39:29 - ERROR - Field 'item' argument 'itemId' of type 'Int!' is required, but it was not provided.
+
+GraphQL request:2:3
+1 | query{
+2 |   item (id: 2) {
+  |   ^
+3 |     id
+2024-07-27 14:39:45 - ERROR - Unknown argument 'item_id' on field 'Query.item'. Did you mean 'itemId'?
+
+GraphQL request:2:9
+1 | query{
+2 |   item (item_id: 2) {
+  |         ^
+3 |     id
+2024-07-27 14:39:45 - ERROR - Field 'item' argument 'itemId' of type 'Int!' is required, but it was not provided.
+
+GraphQL request:2:3
+1 | query{
+2 |   item (item_id: 2) {
+  |   ^
+3 |     id
+2024-07-27 14:40:48 - ERROR - Syntax Error: Expected Name, found ')'.
+
+GraphQL request:2:8
+1 | query {
+2 |   item() {
+  |        ^
+3 |     id
+2024-07-27 14:40:53 - ERROR - Syntax Error: Expected Name, found ')'.
+
+GraphQL request:2:9
+1 | query {
+2 |   items() {
+  |         ^
+3 |     id
