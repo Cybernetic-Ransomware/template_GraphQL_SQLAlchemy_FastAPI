@@ -8,7 +8,7 @@ Quick implementation of a database connector with both REST endpoints and GraphQ
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/Cybernetic-Ransomware/template_GraphQL_SQLAlchemy_FastAPI.git
     ```
 2. Install Python >= 3.12.
 3. Create a virtual environment:
