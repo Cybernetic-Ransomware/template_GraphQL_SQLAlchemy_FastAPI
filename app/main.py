@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Depends, HTTPException
 from strawberry.fastapi import GraphQLRouter
+from strawberry.subscriptions import GRAPHQL_TRANSPORT_WS_PROTOCOL, GRAPHQL_WS_PROTOCOL
 from sqlalchemy.orm import Session
 
 
@@ -19,6 +20,10 @@ Base.metadata.create_all(bind=engine)
 graphql_app = GraphQLRouter(
     schema,
     context_getter=get_context,
+    subscription_protocols=[
+        GRAPHQL_TRANSPORT_WS_PROTOCOL,
+        GRAPHQL_WS_PROTOCOL,
+    ],
 )
 
 

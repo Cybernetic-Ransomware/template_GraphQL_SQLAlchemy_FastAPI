@@ -1,4 +1,7 @@
+import asyncio
 import strawberry
+
+from typing import AsyncGenerator
 
 from sqlalchemy.orm import Session
 from strawberry.types import Info
@@ -44,3 +47,12 @@ class Mutation:
         item_create = ItemCreate(name=name)
         db_item = create_item(db, item_create)
         return ItemType(id=db_item.id, name=db_item.name)
+
+
+@strawberry.type
+class Subscription:
+    @strawberry.subscription
+    async def count(self, target: int = 100) -> AsyncGenerator[int, None]:
+        for i in range(target):
+            yield i
+            await asyncio.sleep(0.5)
