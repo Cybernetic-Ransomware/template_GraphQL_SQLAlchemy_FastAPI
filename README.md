@@ -42,7 +42,7 @@ Quick implementation of a database connector with both REST endpoints and GraphQ
 
 ---
 
-## Useful documentation
+## Useful links and documentation
 
 - SQLAlchemy: [https://docs.sqlalchemy.org/en/20/](https://docs.sqlalchemy.org/en/20/)
 - FastAPI: [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)
