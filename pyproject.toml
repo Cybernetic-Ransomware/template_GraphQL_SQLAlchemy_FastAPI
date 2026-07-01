@@ -1,0 +1,64 @@
+[project]
+name = "template-graphql-sqlalchemy-fastapi"
+version = "0.1.0"
+description = "Template Project: GraphQL (Strawberry) + SQLAlchemy + FastAPI"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.138.2",
+    "pydantic>=2.13.4",
+    "sqlalchemy>=2.0.51",
+    "strawberry-graphql>=0.320.0",
+]
+
+[dependency-groups]
+dev = [
+    "bandit>=1.9.4",
+    "codespell>=2.4.2",
+    "commitizen>=4.16.4",
+    "pre-commit>=4.6.0",
+    "ruff>=0.15.20",
+    "ty>=0.0.55",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 124
+
+[tool.ruff.lint]
+select = ["E", "F", "UP", "B", "SIM", "I", "RUF"]
+ignore = []
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = [
+    "fastapi.Depends",
+    "fastapi.params.Depends",
+    "fastapi.Query",
+    "fastapi.params.Query",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+docstring-code-line-length = 124
+
+[tool.ty.environment]
+python-version = "3.12"
+
+[tool.codespell]
+skip = "uv.lock,./.git,./.github"
+builtin = "clear"
+quiet-level = 3
+
+[tool.bandit]
+targets = ["app"]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.1.0"
+tag_format = "v$version"
+version_files = [
+    "pyproject.toml:version",
+]

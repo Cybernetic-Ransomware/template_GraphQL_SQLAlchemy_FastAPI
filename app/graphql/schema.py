@@ -1,6 +1,5 @@
 import strawberry
 
-from app.graphql.resolvers import Query, Mutation, Subscription
-
+from app.graphql.resolvers import Mutation, Query, Subscription
 
 schema = strawberry.Schema(query=Query, mutation=Mutation, subscription=Subscription)

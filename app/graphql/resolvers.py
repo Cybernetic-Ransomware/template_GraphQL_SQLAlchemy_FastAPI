@@ -1,14 +1,12 @@
 import asyncio
+from collections.abc import AsyncGenerator
+
 import strawberry
-
-from typing import AsyncGenerator
-
 from sqlalchemy.orm import Session
 from strawberry.types import Info
 
-from app.connector import create_item, read_items, read_item
+from app.connector import create_item, read_item, read_items
 from app.schemas import ItemCreate
-from app.models import Item
 
 
 @strawberry.type
@@ -19,7 +17,6 @@ class ItemType:
 
 @strawberry.type
 class Query:
-
     @strawberry.field
     def hello(self) -> str:
         return "Hello World"

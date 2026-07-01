@@ -4,3 +4,4 @@
 
 **/app.log
 *.pyc
+.ruff_cache/

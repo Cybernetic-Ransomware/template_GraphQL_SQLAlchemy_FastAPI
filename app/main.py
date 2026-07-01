@@ -1,16 +1,14 @@
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import Depends, FastAPI, HTTPException
+from sqlalchemy.orm import Session
 from strawberry.fastapi import GraphQLRouter
 from strawberry.subscriptions import GRAPHQL_TRANSPORT_WS_PROTOCOL, GRAPHQL_WS_PROTOCOL
-from sqlalchemy.orm import Session
 
-
-from app.connector import create_item, read_items, read_item
-from app.db.database import engine, Base, get_db
+from app.connector import create_item, read_item, read_items
+from app.db.database import Base, engine, get_db
 from app.graphql.context import get_context
 from app.graphql.schema import schema
-from app.logger.conf_log import setup_logger, get_logger
+from app.logger.conf_log import get_logger, setup_logger
 from app.schemas import ItemCreate, ItemResponse
-
 
 setup_logger()
 logger = get_logger(__name__)
