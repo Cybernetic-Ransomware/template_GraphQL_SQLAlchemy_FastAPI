@@ -41,6 +41,23 @@ Quick implementation of a database connector with both REST endpoints and GraphQ
 
 ---
 
+## Database Backends
+
+`DATABASE_URL` is read from `.env` (copy `.env.template` to get started). Supported modes:
+
+| Mode | `DATABASE_URL` example | Account required | Best for |
+|---|---|---|---|
+| Plain SQLite | `sqlite:///./test.db` | No | Local dev, CI (default) |
+| Local libSQL | `sqlite+libsql:///local.db` | No | Trying the libSQL driver without a cloud account |
+| Turso remote | `sqlite+libsql://<db>.turso.io?secure=true` | Yes | Serverless/multi-instance deployments |
+| Turso embedded replica | `sqlite+libsql:///embedded.db` + `TURSO_SYNC_URL` | Yes | Low-latency local reads, synced to the cloud |
+| Native Turso (bonus) | `sqlite+turso:///local_native.db` | No | Experimental — unrelated to Turso Cloud/libSQL |
+
+Only the plain SQLite mode runs in CI/tests; the others need real Turso credentials
+(`turso db tokens create <name>`) and are for manual/local use.
+
+---
+
 ## Development
 
 Set up the pre-commit hooks once after cloning:
