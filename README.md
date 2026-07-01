@@ -4,33 +4,32 @@ Quick implementation of a database connector with both REST endpoints and GraphQ
 
 ---
 
+## Requirements
+
+| Tool   | Version                                       |
+|--------|-----------------------------------------------|
+| Python | >= 3.12                                       |
+| uv     | latest                                        |
+| just   | latest (optional, for the `justfile` recipes) |
+
 ## Initialization
 
 1. Clone the repository:
     ```bash
     git clone https://github.com/Cybernetic-Ransomware/template_GraphQL_SQLAlchemy_FastAPI.git
     ```
-2. Install Python >= 3.12.
-3. Create a virtual environment:
+2. Install [uv](https://docs.astral.sh/uv/getting-started/installation/).
+3. Install dependencies (creates `.venv` and installs runtime + dev dependencies):
     ```bash
-    python -m venv .venv
+    uv sync
     ```
-4. Activate the virtual environment:
-    - On Windows:
-      ```bash
-      .venv\Scripts\activate
-      ```
-    - On macOS and Linux:
-      ```bash
-      source .venv/bin/activate
-      ```
-5. Install dependencies from `requirements.txt`:
+4. Run the application:
     ```bash
-    pip install -r requirements.txt
+    uv run uvicorn app.main:app --reload --port 8080
     ```
-6. Run the application:
+    or, with [just](https://github.com/casey/just):
     ```bash
-    uvicorn app.main:app --reload --port 8080
+    just run
     ```
 
 ---
@@ -39,6 +38,22 @@ Quick implementation of a database connector with both REST endpoints and GraphQ
 
 - OpenAPI Documentation: [http://127.0.0.1:8080/docs](http://127.0.0.1:8080/docs)
 - GraphQL Playground: [http://127.0.0.1:8080/graphql](http://127.0.0.1:8080/graphql)
+
+---
+
+## Development
+
+Set up the pre-commit hooks once after cloning:
+```bash
+uv run pre-commit install
+```
+
+Common tasks (see `justfile` for the full list):
+```bash
+just format   # ruff format
+just lint     # ruff format + lint, ty type-check, codespell, bandit
+just commit   # run pre-commit, then open Commitizen for a conventional commit
+```
 
 ---
 
