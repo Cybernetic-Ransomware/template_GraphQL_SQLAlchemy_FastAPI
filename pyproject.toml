@@ -51,7 +51,6 @@ python-version = "3.12"
 skip = "uv.lock,./.git,./.github"
 builtin = "clear"
 quiet-level = 3
-ignore-words-list = "daty"
 
 [tool.bandit]
 targets = ["app"]

@@ -3,11 +3,11 @@ import logging
 
 def setup_logger():
     logging.basicConfig(
-        filename="app.log",  # Plik, do którego będą zapisywane logi
-        filemode="a",  # Tryb otwierania pliku (a - append)
-        format="%(asctime)s - %(levelname)s - %(message)s",  # Format logów
-        datefmt="%Y-%m-%d %H:%M:%S",  # Format daty i czasu
-        level=logging.INFO,  # Poziom logowania
+        filename="app.log",  # File to which logs will be written
+        filemode="a",  # File open mode (a - append)
+        format="%(asctime)s - %(levelname)s - %(message)s",  # Log format
+        datefmt="%Y-%m-%d %H:%M:%S",  # Date and time format
+        level=logging.INFO,  # Logging level
     )
 
     console_handler = logging.StreamHandler()
