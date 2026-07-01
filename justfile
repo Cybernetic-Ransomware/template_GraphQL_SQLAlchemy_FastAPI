@@ -14,6 +14,10 @@ lint:
     uv run python -m codespell_lib app/
     uv run bandit -q -c pyproject.toml -r app/
 
+# Run the test suite (plain SQLite mode only)
+test:
+    uv run pytest
+
 # Run the app locally with auto-reload
 # Swagger UI: http://127.0.0.1:8080/docs
 # GraphQL Playground: http://127.0.0.1:8080/graphql

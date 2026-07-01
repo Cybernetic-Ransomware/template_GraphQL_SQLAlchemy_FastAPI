@@ -1,4 +1,4 @@
-name: Lint
+name: Lint & Test
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   lint:
-    name: Lint
+    name: Lint & Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -33,3 +33,6 @@ jobs:
 
       - name: bandit security scan
         run: uv run bandit -q -c pyproject.toml -r app/
+
+      - name: pytest
+        run: uv run pytest

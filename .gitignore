@@ -1,4 +1,8 @@
 /test.db
+/local.db
+/embedded.db
+/local_native.db
+/.env
 /.venv/
 /.idea/
 
