@@ -28,7 +28,10 @@ Rationale:
 - Turso/libSQL keeps SQLite's simplicity (still a local file, same SQL dialect) while adding
   opt-in replication — a reasonable next step for read scaling or edge deployment without
   running a separate database server. Trade-offs: smaller ecosystem than Postgres, vendor
-  dialect, Linux/macOS only.
+  dialect, and the `sqlalchemy-libsql`/`libsql-experimental` driver currently ships wheels for
+  Linux and macOS only, no Windows (verified via `uv.lock`) — this is a limitation of that
+  specific Python package, not of Turso/libSQL as a protocol. The bonus `pyturso` native-engine
+  mode (a different, unrelated product, see README) does publish Windows wheels.
 - Postgres offers the best concurrent-write and relational-feature story, but requires running
   and operating a separate server — not justified while the schema is one table with no
   multi-writer traffic.

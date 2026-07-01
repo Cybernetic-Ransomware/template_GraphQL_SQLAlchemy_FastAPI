@@ -8,7 +8,7 @@ class Settings(BaseSettings):
 
     database_url: str = "sqlite:///./test.db"
     turso_auth_token: str | None = None
-    turso_sync_url: str | None = None
+    turso_database_url: str | None = None
 
 
 settings = Settings()
